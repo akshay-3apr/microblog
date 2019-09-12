@@ -1,0 +1,70 @@
+{% extends "base.html" %} {% block content %}
+<!-- <div class="container-fluid"> -->
+<div class="row justify-content-between">
+    <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Please sign up for MicroBlog <small>It's free!</small></h3>
+            </div>
+            <div class="panel-body">
+                <form role="form" enctype="multipart/form-data" method="POST">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                {{ form.firstname.label(class="sr-only")}} {{ form.firstname(size=32,class="form-control input-sm",placeholder="First Name",autofocus="true",type="text") }} {% for error in form.firstname.errors %}
+                                <span style="color: red;">[{{ error }}]</span> {% endfor %}
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                {{ form.lastname.label(class="sr-only")}} {{ form.lastname(size=32,class="form-control input-sm",placeholder="Last Name",autofocus="true",type="text") }} {% for error in form.lastname.errors %}
+                                <span style="color: red;">[{{ error }}]</span> {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        {{ form.email.label(class="sr-only")}} {{ form.email(size=32,class="form-control input-sm",placeholder="Email Address",autofocus="true",type="email") }} {% for error in form.email.errors %}
+                        <span style="color: red;">[{{ error }}]</span> {% endfor %}
+                    </div>
+
+                    <div class="form-group">
+                        {{ form.username.label(class="sr-only")}} {{ form.username(size=32,class="form-control input-sm",placeholder="Desired Username",autofocus="true",type="text") }} {% for error in form.username.errors %}
+                        <span style="color: red;">[{{ error }}]</span> {% endfor %}
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                {{ form.password.label(class="sr-only")}} {{ form.password(size=32,class="form-control input-sm",placeholder="Password",autocomplete='true') }}{% for error in form.password.errors %}
+                                <span style="color: red;">[{{ error }}]</span> {% endfor %}
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                {{ form.password2.label(class="sr-only")}} {{ form.password2(size=32,class="form-control input-sm",placeholder="Confirm Password",autocomplete='true') }}{% for error in form.password2.errors %}
+                                <span style="color: red;">[{{ error }}]{% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="custom-file" id="customFile" lang="es">
+                                    <!-- {{ form.image.label(class="custom-file-label")}} {{ form.image(size=32,class="custom-file-input",style="margin: 15px;",placeholder ="Upload Image for Face ID",style="", type='file') }}{% for error in form.image.errors %}
+                                    <span style="color: red;">[{{ error }}]{% endfor %} -->
+                                            {{ form.image.label()}} {{ form.image(placeholder ="Upload Image for Face ID",type='file') }}
+                                            <br>{% for error in form.image.errors %}
+                                            <span style="color: red;">[{{ error }}]{% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        {{form.submit(class="btn btn-info btn-block")}}
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- </div> -->
+{% endblock %}

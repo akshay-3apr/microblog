@@ -1,0 +1,124 @@
+2019-06-30 22:47:43,029 ERROR: Exception on /edit_profile [GET] [in C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\flask\microblog\app\routes.py", line 191, in edit_profile
+    form = EditProfileForm(current_user.username)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\wtforms\form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'original_username'
+2019-06-30 22:47:53,432 INFO: Microblog startup [in D:\flask\microblog\app\__init__.py:55]
+2019-07-01 07:13:04,572 INFO: Microblog startup [in D:\flask\microblog\app\__init__.py:55]
+2019-07-01 07:14:07,713 INFO: Microblog startup [in D:\flask\microblog\app\__init__.py:55]
+2019-07-01 07:14:31,539 INFO: Microblog startup [in D:\flask\microblog\app\__init__.py:55]
+2019-07-01 07:33:33,304 INFO: Microblog startup [in D:\flask\microblog\app\__init__.py:55]
+2019-07-01 07:35:44,315 INFO: Microblog startup [in D:\flask\microblog\app\__init__.py:55]
+2019-07-01 07:41:35,048 INFO: Microblog startup [in D:\flask\microblog\app\__init__.py:55]
+2019-07-01 07:45:43,846 ERROR: Exception on /login [POST] [in C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\flask\microblog\app\routes.py", line 51, in login
+    user = User.query.filter_by(username=user['userList'][0]).first()
+IndexError: list index out of range
+2019-07-01 07:45:52,302 ERROR: Exception on /login [POST] [in C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\flask\microblog\app\routes.py", line 51, in login
+    user = User.query.filter_by(username=user['userList'][0]).first()
+IndexError: list index out of range
+2019-07-01 07:46:40,269 ERROR: Exception on /login [POST] [in C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\flask\microblog\app\routes.py", line 51, in login
+    user = User.query.filter_by(username=user['userList'][0]).first()
+IndexError: list index out of range
+2019-07-02 08:44:39,887 INFO: Microblog startup [in D:\flask\microblog\app\__init__.py:55]
+2019-07-02 09:03:26,082 INFO: Microblog startup [in D:\flask\microblog\app\__init__.py:55]
+2019-07-02 09:03:59,826 INFO: Microblog startup [in D:\flask\microblog\app\__init__.py:55]
+2019-07-02 09:04:07,327 INFO: Microblog startup [in D:\flask\microblog\app\__init__.py:55]
+2019-07-02 09:08:07,048 INFO: Microblog startup [in D:\flask\microblog\app\__init__.py:55]
+2019-07-23 22:21:08,600 INFO: Microblog startup [in D:\flask\microblog\app\__init__.py:58]
+2019-07-23 22:52:18,635 INFO: Microblog startup [in D:\flask\microblog\app\__init__.py:58]
+2019-07-23 23:05:04,930 ERROR: Exception on /user/akshay [GET] [in C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\flask\microblog\app\routes.py", line 176, in user
+    next_url = url_or('user',username=user.username,page=posts.next_num) if posts.has_next else None
+NameError: name 'url_or' is not defined
+2019-07-23 23:05:23,491 ERROR: Exception on /user/akshay [GET] [in C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\flask\microblog\app\routes.py", line 176, in user
+    next_url = url_or('user',username=user.username,page=posts.next_num) if posts.has_next else None
+NameError: name 'url_or' is not defined

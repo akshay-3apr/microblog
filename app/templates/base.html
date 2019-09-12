@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    {% if title %}
+    <title>{{ title }} - Microblog</title>
+    {% else %}
+    <title>Welcome to Microblog</title>
+    {% endif %}
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" type="text/css"
+        href="{{url_for('static',filename='bootstrap-3.4.1-dist/css/bootstrap-theme.css.map')}}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="{{url_for('static',filename='bootstrap-4.1.3-dist/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/main.css')}}">
+    <link rel="stylesheet" type="text/css"
+        href="{{url_for('static',filename='fontawesome-free-5.9.0-web/css/all.css')}}">
+
+</head>
+
+<body>
+    <div class='container-fluid'>
+        <div class='row'>
+            <div class="col-sm-12 col-md-12">
+                <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#"><img src="{{url_for('static',filename='img/page/m1.png')}}" alt="" width="5%"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        {% if not current_user.is_anonymous %}
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class='nav-link' href="{{url_for('index')}}">Home <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class='nav-link' href="{{ url_for('explore') }}">Explore</a>
+                            </li>
+                        </ul>
+                        {% endif %}
+                        {% if current_user.is_anonymous %}
+                        <button class="btn btn-outline-success" style="right: 30px;position: fixed;">
+                            <a class='nav-link' href="{{ url_for('login') }}">Login</a>
+                        </button>
+                        {% else %}
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                        <ul class="navbar-nav my-2 my-sm-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img class="img-circle" src="{{'/'+current_user.fetch_user_img().url}}"
+                                        width="50px">
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item"
+                                        href="{{ url_for('user', username=current_user.username) }}">Profile</a>
+                                    <a class="dropdown-item" href="{{ url_for('logout') }}">Logout</a>
+                                    <div class="dropdown-divider" style="z-index: 100000 !important"></div>
+                                    <div class='dropdown-item'>
+                                        <h6 style="color:blue">Last Active Session:</h6>
+                                        <div style="font-size: 1rem;">{{ moment(current_user.last_seen).format('LLL') }}</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        {% endif%}
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- <hr>  -->
+        {% with messages = get_flashed_messages() %} {% if messages %}
+        <div class="row banner-width">
+            <div class='col-sm-12 page-size banner'>
+                <ul>
+                    {% for message in messages %}
+                    <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {% endif %} {% endwith %} {% block content %}{% endblock %}
+
+    </div>
+    
+    {% block scripts %}
+        {{ moment.include_jquery() }}
+        {{ moment.include_moment() }}
+    {% endblock %}
+    <script src="{{url_for('static',filename='js/jquery-3.4.1.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/popper.js')}}"></script>
+    <script src="{{url_for('static',filename='bootstrap-4.1.3-dist/js/bootstrap.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/main.js')}}"></script>
+</body>
+
+</html>

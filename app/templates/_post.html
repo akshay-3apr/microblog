@@ -1,0 +1,15 @@
+<table class="table table-hover">
+    <tr valign="top">
+        <td width="70px">
+            <img class="img-circle" src="{{'/'+post.author.fetch_user_img().url}}" width="50px">
+        </td>
+        <td>
+            <a href="{{ url_for('user', username=post.author.username) }}">
+                {{ post.author.fullname }} 
+            </a> 
+            said {{ moment(post.timestamp).fromNow() }}:
+            <br>
+            {{ post.body }}
+        </td>
+    </tr>
+</table>
