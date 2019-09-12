@@ -47,6 +47,8 @@ or for Machine Learning libraries you can install anaconda. I used conda 4.7.11.
 * Face Recognition for generating Face encodings and also for finding similarities.  
 * Python 3.7.3
 
+![](project_gif.gif)
+
 ## Authors
 * **Akshay Prakash** - *Initial work*
 
