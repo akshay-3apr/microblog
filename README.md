@@ -10,9 +10,8 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them:
 
 ```
-Microsoft Visual Studio 2015 (or newer) with C/C++ Compiler installed. (Visual C++ 2015 Build Tools didn't work for me and I got into problems in compiling dlib)
-Boost library version 1.63 or newer. Also, you can use precompiled binaries for specific MSVC you have but I don't suggest. (I've included the compiling procedure of Boost in this tutorial)
-Of course Python3 (I used Python3.5 x64 but the other versions may work too)
+Microsoft Visual Studio 2015 (or newer) with C/C++ Compiler installed.
+Of course Python3 (I used Python3.7.3 x64)
 CMake for windows and add it to your system environment variables.
 ```
 
