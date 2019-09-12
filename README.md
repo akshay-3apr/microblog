@@ -3,10 +3,9 @@ MicroBlog webapplication built to understand Flask framework and implement Face 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development purposes.
 
 ### Prerequisites
-
 What things you need to install the software and how to install them:
 
 ```
@@ -17,10 +16,13 @@ CMake for windows and add it to your system environment variables.
 
 ### Installing
 ```
-This project is underdevelopment and hence a single installer is not ready. You can clone the whole project into your local and start working on the same. There are mulitple pakages used of Flask library, please go through the package installation details. IF there is any new package added the same will be updated here. 
+This project is under development and hence a single installer is not available.
+You can clone the whole project into your local and start working on the same.
+There are mulitple Flask library used, please go through the package installation details. 
+If there is any new package added the same will be updated here. 
 ```
 ```
-Easy installation:
+Installation:
 Just install dlib and face_recognition (not always on newest version):
 pip install dlib and then pip install face_recognition.
 
