@@ -16,19 +16,29 @@ CMake for windows and add it to your system environment variables.
 ```
 
 ### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
 ```
-Give the example
+This project is underdevelopment and hence a single installer is not ready. You can clone the whole project into your local and start working on the same. There are mulitple pakages used of Flask library, please go through the package installation details. IF there is any new package added the same will be updated here. 
 ```
-
-And repeat
-
 ```
-until finished
+Easy installation:
+Just install dlib and face_recognition (not always on newest version):
+pip install dlib and then pip install face_recognition.
+
+Manual installation:
+pip install flask
+pip install flask-wtf
+pip install flask-sqlalchemy
+pip install flask-migrate
+pip install flask-login
+pip install flask-uploads
+pip install flask-moment
+pip install face_recognition
+pip install flask-bootstrap
+pip install scipy
+pip install numpy
+pip install opencv-python
+
+or for Machine Learning libraries you can install anaconda. I used conda 4.7.11.
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
