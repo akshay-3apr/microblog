@@ -37,60 +37,19 @@ pip install flask-bootstrap
 pip install scipy
 pip install numpy
 pip install opencv-python
-
 or for Machine Learning libraries you can install anaconda. I used conda 4.7.11.
 ```
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
 ## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+* Flask and respective Flask libraries for database connection and integration of frontend webpages 
+* Face Recognition for generating Face encodings and also for finding similarities.  
+* Python 3.7.3
 
 ## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+* **Akshay Prakash** - *Initial work*
 
 ## Acknowledgments
-
+* Miguel Grinberg : https://github.com/miguelgrinberg
+* Adam Geitgey : https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78
 * Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Inspirations
