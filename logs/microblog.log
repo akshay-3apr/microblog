@@ -1,0 +1,65 @@
+2019-07-28 22:58:17,315 ERROR: Exception on /user/akshay [GET] [in C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\flask\microblog\app\routes.py", line 176, in user
+    next_url = url_for('user',username=user.username,page=posts.next_num) if posts.has_next else None
+NameError: name 'url_or' is not defined
+2019-07-28 22:59:02,358 ERROR: Exception on /user/akshay [GET] [in C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\flask\microblog\app\routes.py", line 176, in user
+    next_url = url_for('user',username=user.username,page=posts.next_num) if posts.has_next else None
+NameError: name 'url_or' is not defined
+2019-07-28 22:59:09,899 ERROR: Exception on /user/akshay [GET] [in C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\flask\microblog\app\routes.py", line 176, in user
+    next_url = url_for('user',username=user.username,page=posts.next_num) if posts.has_next else None
+NameError: name 'url_or' is not defined
+2019-09-03 16:51:51,614 INFO: Microblog startup [in F:\flask\microblog\app\__init__.py:58]
+2019-09-03 16:53:45,455 INFO: Microblog startup [in F:\flask\microblog\app\__init__.py:58]
+2019-09-05 20:31:42,590 INFO: Microblog startup [in F:\flask\microblog\app\__init__.py:58]
+2019-09-05 20:33:02,058 INFO: Microblog startup [in F:\flask\microblog\app\__init__.py:58]
+2019-09-05 20:33:34,213 INFO: Microblog startup [in F:\flask\microblog\app\__init__.py:58]
+2019-09-05 20:33:50,154 INFO: Microblog startup [in F:\flask\microblog\app\__init__.py:58]
+2019-09-05 20:34:38,348 INFO: Microblog startup [in F:\flask\microblog\app\__init__.py:58]
+2019-09-07 12:29:41,435 INFO: Microblog startup [in F:\flask\microblog\app\__init__.py:58]

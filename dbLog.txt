@@ -1,0 +1,15 @@
+An error occured while storing face_encode to the Face_encoding table: Traceback (most recent call last):
+  File "D:\flask\microblog\app\dbOperation.py", line 27, in addFaceEncode
+    db.session.commit()
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\sqlalchemy\orm\scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\sqlalchemy\orm\session.py", line 1026, in commit
+    self.transaction.commit()
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\sqlalchemy\orm\session.py", line 491, in commit
+    self._assert_active(prepared_ok=True)
+  File "C:\Users\Akshay\Anaconda3\lib\site-packages\sqlalchemy\orm\session.py", line 294, in _assert_active
+    % self._rollback_exception
+sqlalchemy.exc.InvalidRequestError: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.InterfaceError) Error binding parameter 2 - probably unsupported type.
+[SQL: INSERT INTO face__images (username, url, filename, user_id) VALUES (?, ?, ?, ?)]
+[parameters: ('akshay', 'static/img/Users//akshay/a1.jpeg', <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=450x538 at 0xF45A670>, 1)]
+(Background on this error at: http://sqlalche.me/e/rvf5)
