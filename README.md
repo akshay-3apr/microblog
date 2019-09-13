@@ -1,5 +1,5 @@
 # microblog
-MicroBlog webapplication built to understand Flask framework and implement Face Recognition as the login option
+MicroBlog web application built to understand Flask framework and implement Face Recognition as the login option
 
 ## Getting Started
 
