@@ -1,7 +1,7 @@
 # microblog
 MicroBlog web application built to understand Flask framework and implement Face Recognition as the login option.
 
-For Face recognition we using Histogram of Oriented Gradients on Black and White photos. We are breaking the image into small squares of 16x16 pixels each and finding the major direction into which the light gets darker over the face and highlighting it with an arrow. These arrows are called gradients and they show the direction the image is getting darker. To find faces in this HOG image, all we have to do is find the part of our image that looks the most similar to a known HOG pattern that was extracted from a bunch of other training faces.
+For Face recognition we are using Histogram of Oriented Gradients on Black and White photos. We are breaking the image into small squares of 16x16 pixels each and finding the major direction into which the light gets darker over the face and highlighting it with an arrow. These arrows are called gradients and they show the direction the image is getting darker. To find faces in this HOG image, all we have to do is find the part of our image that looks the most similar to a known HOG pattern that was extracted from a bunch of other training faces.
 
 ## Getting Started
 
